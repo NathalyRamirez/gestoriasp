@@ -1,0 +1,8 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+greet:
+    path: /greet
+    controller: App\Controller\GreetController::index
