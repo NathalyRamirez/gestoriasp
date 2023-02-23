@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Navbar, Avatar, Dropdown, DropdownComponent} from "flowbite-react";
+import { Button, Navbar, Avatar, Dropdown } from "flowbite-react";
 import { Button as BoostrapButton } from "react-bootstrap";
 
 export default function NavbarSP(props) {
@@ -17,7 +17,7 @@ export default function NavbarSP(props) {
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <DropdownComponent
+          <Dropdown
             arrowIcon={false}
             inline={true}
             label={
@@ -39,14 +39,14 @@ export default function NavbarSP(props) {
             <Dropdown.Item>Earnings</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
-          </DropdownComponent>
+          </Dropdown>
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
           <Navbar.Link href="/navbars" active={true}>
             Home
           </Navbar.Link>
-          <Navbar.Link href="/navbars">About</Navbar.Link>
+          <Navbar.Link href="/workers">Workers</Navbar.Link>
           <Navbar.Link href="/navbars">Services</Navbar.Link>
           <Navbar.Link href="/navbars">Pricing</Navbar.Link>
           <Navbar.Link href="/navbars">Contact</Navbar.Link>

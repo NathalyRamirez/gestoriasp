@@ -10,8 +10,14 @@ export default function Login(props) {
     props.handleLogin(username, password);
   };
 
+
+
   return (
-    <form className="flex flex-col gap-4">
+   
+   <div className="loginForm block center">
+   
+   <form className="flex flex-col gap-4">
+
       <div>
         <div className="mb-2 block">
           {/* <Label
@@ -48,5 +54,6 @@ export default function Login(props) {
 
       <Button onClick={handleSubmit}>Submit</Button>
     </form>
+    </div>
   );
 }

@@ -3,4 +3,18 @@
 @tailwind utilities;
 body {
     background-color: lightgray;
+
+}
+
+.loginForm {
+    width: 50%;
+    background-color: rgb(121, 163, 222);
+    padding: 2%;
+    text-align: center;
+}
+
+
+.btn-close {
+color: black !important ;
+
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { default as Login } from "./Login";
-import { default as NavbarSP } from "./NavbarSP";
+import { default as Login } from "./Components/Login";
+import { default as NavbarSP } from "./Components/NavbarSP";
 import axios from "axios";
-
+import { default as Workers } from "./Workers";
 
 export default function App(props) {
   const [token, setToken] = useState(null);
@@ -29,9 +29,7 @@ export default function App(props) {
       {token && (
         <>
           <NavbarSP />
-          <div>
-            <h4>Has iniciado sesión correctamente.</h4>
-          </div>
+         Workers
         </>
       )}
       {!token && <Login handleLogin={handleLogin} />}
